@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body{
+    min-width: 425px;
+}
+// @ .btn_success {bg-red-500}
+.btn_success {
+  @apply bg-green-500 px-4 py-2 rounded-md text-white font-bold shadow-md;
+}
+
+.btn_cancel {
+    @apply bg-red-500 px-4 py-2 rounded-md text-white font-bold shadow-md;
+  }
+
+  .card {
+    @apply bg-gray-100 shadow-md p-5 rounded-md
+  }
+  
+  .card_product {
+    @apply bg-gray-200 shadow-md p-5 rounded-md
+  }
